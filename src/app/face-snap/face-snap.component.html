@@ -2,11 +2,12 @@
     <div class="col s12 m6">
         <div class="card blue-grey darken-1 face-snap-card">
             <div class="card-content white-text">
-                <h2>{{title}}</h2>
-                <p>{{createdDate}}</p>
+                <h2>{{ faceSnap.title}}</h2>
+                <p>{{faceSnap.description}}</p>
+                <p>{{faceSnap.createdDate}}</p>
                 <img [src]="imageUrl" [alt]="title" />
-                <p>{{description}}</p>
-                <p><button mat-button color="warn" (click)="onAddSnap()">{{buttonText}}</button>👍 {{snaps}}</p>
+                <p><button mat-button color="warn" (click)="onAddSnap()">{{buttonText}}</button>👍 {{faceSnap.snaps}}
+                </p>
             </div>
         </div>
     </div>
